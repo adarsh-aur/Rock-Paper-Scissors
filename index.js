@@ -1,3 +1,4 @@
+document.querySelector(".auto-play").addEventListener("click", autoPlay);
 
 let score = JSON.parse(localStorage.getItem("score")) || {
     wins: 0,
@@ -19,6 +20,14 @@ function computerChoice(){
     var choices = ["👊🏻", "🤚🏻", "✌🏻"];
     var random = Math.floor(Math.random() * 3);
     return choices[random];
+}
+
+function autoPlay() {
+    setInterval(function () {
+        const computer = computerChoice();
+        const userChoice = computerChoice();
+        game(userChoice, computer);
+    }, 1000)
 }
 
 function game(userChoice, computer){

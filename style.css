@@ -51,3 +51,13 @@ p{
     color: darkgreen;
     padding: 10px;
 }
+
+.auto-play {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgray;
+}

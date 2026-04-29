@@ -21,8 +21,9 @@ The interface is minimal and responsive, focusing on usability and simplicity.
 
 - Interactive UI with emoji-based controls 👊🏻 🤚🏻 ✌🏻  
 - Real-time game result display  
-- Persistent score tracking using `localStorage`  
-- Reset functionality to clear scores 🔄  
+- Persistent score tracking using localStorage
+- Reset functionality to clear scores 
+- Auto Play mode (1-second interval gameplay) 
 - Simple and responsive layout  
 
 ## ⚙️ How It Works
@@ -40,6 +41,21 @@ The interface is minimal and responsive, focusing on usability and simplicity.
    - Tie  
 
 4. The result and updated score are displayed dynamically.
+
+## 🤖 Auto Play Feature
+
+The game includes an **Auto Play mode**:
+
+- When activated, the game automatically plays itself
+- A `setInterval` runs every **1 second**
+- Both user and computer choices are generated automatically
+- Scores update in real time without user interaction
+- The feature can be toggled ON/OFF using the Auto Play button
+
+This demonstrates usage of:
+- `setInterval()`
+- Automated event simulation
+- Dynamic UI updates without user input
 
 ---
 
