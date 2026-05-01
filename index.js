@@ -23,7 +23,7 @@ function computerChoice(){
 }
 
 function autoPlay() {
-    setInterval(function () {
+    setInterval(() => {
         const computer = computerChoice();
         const userChoice = computerChoice();
         game(userChoice, computer);
